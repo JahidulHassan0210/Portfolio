@@ -4,349 +4,630 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Portfolio - Skills</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+    <!-- Tailwind CSS -->
     <link href="./src/output.css" rel="stylesheet">
 </head>
 
-<body class="bg-[#FEF6DD]">
+<body class="bg-[#FEF6DD] min-h-screen text-gray-800 font-poppins">
+
     <!-- ===== Header part start ===== -->
-    <header class="bg-white">
-        <nav class="container mx-auto py-5 mb-5 px-4">
-            <h1 class="font-caprasimo text-[#9D8640] text-4xl">PORTFOLIO</h1>
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-[#E7E2D1] shadow-sm">
+
+        <nav class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+
+            <h1 class="font-caprasimo text-[#9D8640] text-3xl sm:text-4xl">
+                PORTFOLIO
+            </h1>
+
+            <span
+                class="font-poppins text-xs sm:text-sm font-semibold text-gray-700 bg-[#FAF6E9] border border-[#D8C99F] px-3 sm:px-4 py-2 rounded-lg">
+                Available for Hire
+            </span>
+
         </nav>
     </header>
     <!-- ===== Header part end ===== -->
 
-    <!-- ===== Skills part start ===== -->
-    <section class="container mx-auto px-4">
-        <div class="flex justify-between items-start gap-4 mb-10">
 
-            <!-- LEFT SIDEBAR: Profile Card -->
-            <div
-                class="relative w-[340px] bg-white border-2 border-[#C6B683] rounded-2xl p-6 pt-0 text-center font-sans mt-16 shadow-sm shrink-0">
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 py-8 lg:py-12">
 
-                <div class="flex justify-center -mt-16 mb-4">
-                    <img class="w-40 h-40 object-cover border-4 border-[#C6B683] rounded-2xl shadow-md"
-                        src="./images/dp.png" alt="Profile Picture" />
+        <div class="flex flex-col lg:flex-row gap-6 items-start">
+
+
+            <!-- LEFT PROFILE SIDEBAR -->
+            <aside
+                class="w-full lg:w-80 xl:w-88 bg-white border-2 border-[#C6B683] rounded-2xl p-6 pt-0 text-center shadow-md shrink-0 lg:sticky lg:top-24 mt-12 lg:mt-12 transition-all">
+
+                <!-- Profile Image -->
+                <div class="flex justify-center -mt-14 mb-4">
+                    <img class="w-36 h-36 object-cover border-4 border-[#C6B683] rounded-2xl shadow-lg ring-4 ring-white"
+                        src="./images/dp.png" alt="Jahidul Hassan Profile Picture">
                 </div>
 
-                <h2 class="font-poppins font-bold text-2xl text-gray-900 mb-2">Jahidul Hassan</h2>
+                <!-- Name -->
+                <h2 class="font-poppins font-bold text-2xl text-gray-900 mb-2 tracking-tight">
+                    Jahidul Hassan
+                </h2>
 
+                <!-- Role -->
                 <div
-                    class="font-poppins inline-block bg-[#FAF6E9] border border-[#D8C99F] text-gray-800 text-xs font-semibold px-4 py-1.5 rounded-lg mb-5">
+                    class="font-poppins inline-block bg-[#FAF6E9] border border-[#D8C99F] text-gray-800 text-xs font-semibold px-3 py-1.5 rounded-lg mb-5 shadow-xs">
                     Full-Stack AI Dev. + Graphic Designer
                 </div>
 
-                <!-- Social Media Icons Row -->
-                <div class="flex justify-center gap-2.5 mb-6">
-                    <a href="https://www.instagram.com/at_rifff02" target="_blank"
-                        class="w-9 h-9 border border-gray-200 rounded-lg flex items-center justify-center bg-white hover:bg-gray-50 transition-colors">
+
+                <!-- Social Media -->
+                <div class="flex justify-center gap-3 mb-6">
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/at_rifff02" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram"
+                        class="w-10 h-10 border border-gray-200 rounded-xl flex items-center justify-center bg-white hover:bg-[#FAF6E9] hover:border-[#C6B683] hover:scale-105 transition-all shadow-xs">
+
                         <svg class="w-4 h-4 text-[#E4405F] fill-current" viewBox="0 0 24 24">
                             <path
-                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.204-.013-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.79 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                            </path>
                         </svg>
                     </a>
-                    <a href="https://www.linkedin.com/in/jahidulhassanrifat/" target="_blank"
-                        class="w-9 h-9 border border-gray-200 rounded-lg flex items-center justify-center bg-white hover:bg-gray-50 transition-colors">
+
+
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/jahidulhassanrifat/" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn"
+                        class="w-10 h-10 border border-gray-200 rounded-xl flex items-center justify-center bg-white hover:bg-[#FAF6E9] hover:border-[#C6B683] hover:scale-105 transition-all shadow-xs">
+
                         <svg class="w-4 h-4 text-[#0A66C2] fill-current" viewBox="0 0 24 24">
                             <path
-                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+                            </path>
                         </svg>
                     </a>
-                    <a href="https://github.com/JahidulHassan0210" target="_blank"
-                        class="w-9 h-9 border border-gray-200 rounded-lg flex items-center justify-center bg-white hover:bg-gray-50 transition-colors">
-                        <svg class="w-4 h-4 text-gray-800 fill-current" viewBox="0 0 24 24">
-                            <path
-                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                        </svg>
-                    </a>
-                    <a href="https://www.facebook.com/JahidulHassan0210" target="_blank"
-                        class="w-9 h-9 border border-gray-200 rounded-lg flex items-center justify-center bg-white hover:bg-gray-50 transition-colors">
-                        <svg class="w-4 h-4 text-[#1877F2] fill-current" viewBox="0 0 24 24">
-                            <path
-                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                        </svg>
-                    </a>
-                </div>
 
-                <!-- Contact Details -->
-                <div class="bg-[#F8F6EB] rounded-2xl p-4 text-left mb-6 space-y-3">
-                    <div class="flex items-center gap-3 pb-3 border-b border-[#E7E2D1]">
-                        <div
-                            class="w-8 h-8 rounded-lg bg-[#E2DEC8] flex items-center justify-center text-gray-800 shrink-0">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                            </svg>
-                        </div>
-                        <span class="font-poppins text-xs font-semibold text-gray-800">+880 1845-977122</span>
-                    </div>
-
-                    <div class="flex items-center gap-3 pb-3 border-b border-[#E7E2D1]">
-                        <div
-                            class="w-8 h-8 rounded-lg bg-[#E2DEC8] flex items-center justify-center text-gray-800 shrink-0">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                            </svg>
-                        </div>
-                        <span
-                            class="font-poppins text-xs font-semibold text-gray-800 truncate">jahiduhassanrifat@gmail.com</span>
-                    </div>
-
-                    <div class="flex items-center gap-3 pb-3 border-b border-[#E7E2D1]">
-                        <div
-                            class="w-8 h-8 rounded-lg bg-[#E2DEC8] flex items-center justify-center text-gray-800 shrink-0">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                            </svg>
-                        </div>
-                        <span class="font-poppins text-xs font-semibold text-gray-800 leading-tight">824/2, Nurpur, Donia,
-                            Dhaka-1236</span>
-                    </div>
-
-                    <div class="flex items-center gap-3">
-                        <div
-                            class="w-8 h-8 rounded-lg bg-[#E2DEC8] flex items-center justify-center text-gray-800 shrink-0">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                            </svg>
-                        </div>
-                        <span class="font-poppins text-xs font-semibold text-gray-800">02, OCT. 2001</span>
-                    </div>
-                </div>
-
-                <button
-                    class="font-poppins w-full bg-[#D8C796] hover:bg-[#cca362] border border-[#BFA872] text-gray-800 font-bold py-3 rounded-xl shadow-sm transition-colors cursor-pointer text-sm">
-                    View Resume
-                </button>
-            </div>
-
-            <!-- MIDDLE CONTENT: Skills & Tools -->
-            <div class="w-[760px] bg-white border-2 border-[#B7A261] rounded-2xl p-8 min-h-[560px] shadow-sm shrink-0">
-                
-                <!-- Skills Section -->
-                <h2 class="font-poppins font-bold text-2xl text-gray-900 mb-6">Skills</h2>
-                <div class="flex flex-wrap gap-5 mb-10">
-
-                    <!-- HTML5 -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-20 h-20 bg-white border border-[#D8C99F] rounded-2xl flex items-center justify-center p-3 shadow-sm hover:shadow-md hover:border-[#B7A261] transition-all">
-                            <svg class="w-12 h-12" viewBox="0 0 24 24" fill="none">
-                                <path d="M1.5 0h21l-1.91 21.563L11.97 24 2.41 21.563L1.5 0z" fill="#E34F26"/>
-                                <path d="M12 22.1l7.65-2.12 1.55-17.48H12v19.6z" fill="#EF652A"/>
-                                <path d="M12 9.42H8.38l-.25-2.82H12V3.88H5.32l.74 8.35H12V9.42zm0 6.96l-.04.01-3.52-.95-.23-2.52H5.43l.44 4.99 6.13 1.7v-3.23z" fill="#FFF"/>
-                                <path d="M12 3.88v2.72h3.87l-.36 4.02H12v2.81h3.25l-.31 3.44-2.94.8v3.23l6.13-1.7.83-9.32H12V3.88z" fill="#EEE"/>
-                            </svg>
-                        </div>
-                        <span class="font-poppins font-semibold text-xs text-gray-900 mt-2 text-center">HTML5</span>
-                    </div>
-
-                    <!-- CSS3 -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-20 h-20 bg-white border border-[#D8C99F] rounded-2xl flex items-center justify-center p-3 shadow-sm hover:shadow-md hover:border-[#B7A261] transition-all">
-                            <svg class="w-12 h-12" viewBox="0 0 24 24" fill="none">
-                                <path d="M1.5 0h21l-1.91 21.563L11.97 24 2.41 21.563L1.5 0z" fill="#1572B6"/>
-                                <path d="M12 22.1l7.65-2.12 1.55-17.48H12v19.6z" fill="#33A9DC"/>
-                                <path d="M12 9.42H8.38l-.25-2.82H12V3.88H5.32l.74 8.35H12V9.42zm0 6.96l-.04.01-3.52-.95-.23-2.52H5.43l.44 4.99 6.13 1.7v-3.23z" fill="#FFF"/>
-                                <path d="M12 3.88v2.72h6.84l-.25 2.82H12v2.81h3.8l-.36 4.02-3.44.93v3.23l6.13-1.7.83-9.32H12V3.88z" fill="#EEE"/>
-                            </svg>
-                        </div>
-                        <span class="font-poppins font-semibold text-xs text-gray-900 mt-2 text-center">CSS3</span>
-                    </div>
-
-                    <!-- JavaScript -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-20 h-20 bg-white border border-[#D8C99F] rounded-2xl flex items-center justify-center p-3 shadow-sm hover:shadow-md hover:border-[#B7A261] transition-all">
-                            <svg class="w-11 h-11 rounded-lg" viewBox="0 0 24 24">
-                                <rect width="24" height="24" fill="#F7DF1E"/>
-                                <path d="M6.48 18.23c.36.63.95 1.05 1.83 1.05.81 0 1.35-.42 1.35-1.02 0-.71-.53-1.02-1.44-1.42l-.51-.23c-1.46-.62-2.43-1.39-2.43-3.03 0-2.02 1.55-3.35 3.96-3.35 1.7 0 2.87.58 3.56 1.84l-1.57.99c-.37-.64-.86-.92-1.63-.92-.76 0-1.22.39-1.22.9 0 .61.42.88 1.32 1.28l.51.22c1.72.75 2.58 1.48 2.58 3.12 0 2.21-1.69 3.48-4.27 3.48-2.28 0-3.69-.97-4.29-2.22l1.7-.89zm9.23.23c.32.53.76.88 1.38.88.63 0 .98-.28.98-.68 0-.47-.32-.69-1.08-.98l-.42-.16c-1.32-.49-2.18-1.21-2.18-2.73 0-1.84 1.43-3.17 3.65-3.17 1.58 0 2.59.56 3.19 1.66l-1.45.92c-.31-.5-.69-.74-1.35-.74-.61 0-.96.28-.96.65 0 .42.27.63.96.89l.42.16c1.47.56 2.31 1.22 2.31 2.8 0 2.02-1.54 3.32-4.05 3.32-2.23 0-3.58-.93-4.14-2.15l1.74-.88z" fill="#000"/>
-                            </svg>
-                        </div>
-                        <span class="font-poppins font-semibold text-xs text-gray-900 mt-2 text-center">JavaScript</span>
-                    </div>
-
-                    <!-- React.js -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-20 h-20 bg-white border border-[#D8C99F] rounded-2xl flex items-center justify-center p-3 shadow-sm hover:shadow-md hover:border-[#B7A261] transition-all">
-                            <svg class="w-12 h-12" viewBox="0 0 100 100" fill="none">
-                                <circle cx="50" cy="50" r="10" fill="#61DAFB"/>
-                                <ellipse cx="50" cy="50" rx="42" ry="16" stroke="#61DAFB" stroke-width="4" transform="rotate(0 50 50)"/>
-                                <ellipse cx="50" cy="50" rx="42" ry="16" stroke="#61DAFB" stroke-width="4" transform="rotate(60 50 50)"/>
-                                <ellipse cx="50" cy="50" rx="42" ry="16" stroke="#61DAFB" stroke-width="4" transform="rotate(120 50 50)"/>
-                            </svg>
-                        </div>
-                        <span class="font-poppins font-semibold text-xs text-gray-900 mt-2 text-center">React.js</span>
-                    </div>
-
-                    <!-- Next.js -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-20 h-20 bg-white border border-[#D8C99F] rounded-2xl flex items-center justify-center p-3 shadow-sm hover:shadow-md hover:border-[#B7A261] transition-all">
-                            <svg class="w-11 h-11" viewBox="0 0 180 180" fill="none">
-                                <circle cx="90" cy="90" r="90" fill="#000"/>
-                                <path d="M149.508 157.52L69.142 54H54V126H66.9706V70.3519L137.326 160.985C141.597 160.038 145.672 158.874 149.508 157.52Z" fill="white"/>
-                                <rect x="115" y="54" width="13" height="72" fill="white"/>
-                            </svg>
-                        </div>
-                        <span class="font-poppins font-semibold text-xs text-gray-900 mt-2 text-center">Next.js</span>
-                    </div>
-
-                    <!-- TypeScript -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-20 h-20 bg-white border border-[#D8C99F] rounded-2xl flex items-center justify-center p-3 shadow-sm hover:shadow-md hover:border-[#B7A261] transition-all">
-                            <svg class="w-11 h-11 rounded-lg" viewBox="0 0 24 24" fill="none">
-                                <rect width="24" height="24" rx="4" fill="#3178C6"/>
-                                <path d="M11.97 10.11H9.12v9.33H7.07v-9.33H4.22V8.34h7.75v1.77zm1.88 7.37c.52.33 1.25.56 2.05.56 1.13 0 1.76-.48 1.76-1.18 0-.69-.53-1.07-1.85-1.54-1.74-.61-2.61-1.37-2.61-2.73 0-1.8 1.48-2.94 3.73-2.94 1.11 0 1.93.24 2.51.57l-.59 1.55c-.44-.26-1.08-.47-1.85-.47-1.09 0-1.63.5-1.63 1.1 0 .66.56.97 1.9 1.48 1.77.65 2.58 1.45 2.58 2.82 0 1.97-1.53 3.09-3.95 3.09-1.22 0-2.22-.3-2.82-.69l.37-1.62z" fill="white"/>
-                            </svg>
-                        </div>
-                        <span class="font-poppins font-semibold text-xs text-gray-900 mt-2 text-center">TypeScript</span>
-                    </div>
-
-                    <!-- Node.js -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-20 h-20 bg-white border border-[#D8C99F] rounded-2xl flex items-center justify-center p-3 shadow-sm hover:shadow-md hover:border-[#B7A261] transition-all">
-                            <svg class="w-11 h-11" viewBox="0 0 24 24" fill="none">
-                                <path d="M12 1.5l10.39 6v12L12 25.5l-10.39-6v-12L12 1.5z" fill="#5FA04E"/>
-                                <path d="M12 2.7l9.35 5.4v10.8L12 24.3l-9.35-5.4V8.1L12 2.7z" fill="#336633"/>
-                                <path d="M11.7 8.5c-.3 0-.6.1-.8.3l-3.3 1.9c-.3.2-.5.5-.5.8v3.8c0 .3.2.6.5.8l3.3 1.9c.3.2.6.3.8.3s.6-.1.8-.3l3.3-1.9c.3-.2.5-.5.5-.8v-3.8c0-.3-.2-.6-.5-.8l-3.3-1.9c-.2-.2-.5-.3-.8-.3z" fill="#FFF"/>
-                            </svg>
-                        </div>
-                        <span class="font-poppins font-semibold text-xs text-gray-900 mt-2 text-center">Node.js</span>
-                    </div>
-
-                    <!-- Express.js -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-20 h-20 bg-white border border-[#D8C99F] rounded-2xl flex items-center justify-center p-3 shadow-sm hover:shadow-md hover:border-[#B7A261] transition-all">
-                            <svg class="w-11 h-11" viewBox="0 0 24 24" fill="none">
-                                <path d="M24 12c0 6.627-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0s12 5.373 12 12z" fill="#000"/>
-                                <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" fill="#FFF" font-family="sans-serif" font-weight="bold" font-size="9">ex</text>
-                            </svg>
-                        </div>
-                        <span class="font-poppins font-semibold text-xs text-gray-900 mt-2 text-center">Express.js</span>
-                    </div>
-
-                </div>
-
-                <!-- Tools & Software Section -->
-                <h2 class="font-poppins font-bold text-2xl text-gray-900 mb-6">Tools & Software</h2>
-                <div class="flex flex-wrap gap-5">
 
                     <!-- GitHub -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-20 h-20 bg-white border border-[#D8C99F] rounded-2xl flex items-center justify-center p-3 shadow-sm hover:shadow-md hover:border-[#B7A261] transition-all">
-                            <svg class="w-11 h-11 text-gray-800 fill-current" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    <a href="https://github.com/JahidulHassan0210" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub"
+                        class="w-10 h-10 border border-gray-200 rounded-xl flex items-center justify-center bg-white hover:bg-[#FAF6E9] hover:border-[#C6B683] hover:scale-105 transition-all shadow-xs">
+
+                        <svg class="w-4 h-4 text-gray-800 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
+                            </path>
+                        </svg>
+                    </a>
+
+
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/JahidulHassan0210" target="_blank" rel="noopener noreferrer"
+                        aria-label="Facebook"
+                        class="w-10 h-10 border border-gray-200 rounded-xl flex items-center justify-center bg-white hover:bg-[#FAF6E9] hover:border-[#C6B683] hover:scale-105 transition-all shadow-xs">
+
+                        <svg class="w-4 h-4 text-[#1877F2] fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
+                            </path>
+                        </svg>
+                    </a>
+
+                </div>
+
+
+                <!-- Contact Details -->
+                <div class="bg-[#F8F6EB] rounded-2xl p-4 text-left mb-6 space-y-3.5 border border-[#E7E2D1]">
+
+                    <!-- Phone -->
+                    <div class="flex items-center gap-3 pb-3 border-b border-[#E7E2D1]">
+                        <div
+                            class="w-8 h-8 rounded-lg bg-[#E2DEC8] flex items-center justify-center text-gray-800 shrink-0">
+
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z">
+                                </path>
                             </svg>
+
                         </div>
-                        <span class="font-poppins font-semibold text-xs text-gray-900 mt-2 text-center">GitHub</span>
+
+                        <span class="font-poppins text-xs font-semibold text-gray-800">
+                            +880 1845-977122
+                        </span>
                     </div>
 
-                    <!-- Photoshop -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-20 h-20 bg-white border border-[#D8C99F] rounded-2xl flex items-center justify-center p-3 shadow-sm hover:shadow-md hover:border-[#B7A261] transition-all">
-                            <svg class="w-11 h-11 rounded-lg" viewBox="0 0 24 24">
-                                <rect width="24" height="24" rx="4" fill="#001E36"/>
-                                <path d="M4.5 16.5V7.5H8c1.3 0 2.2.3 2.8.9.6.6.9 1.4.9 2.4 0 1.1-.3 1.9-1 2.5-.6.6-1.6.9-2.8.9H6.3v2.3H4.5zm1.8-4.1h1.5c.7 0 1.2-.2 1.6-.5.3-.3.5-.8.5-1.4 0-.6-.2-1-.5-1.3-.4-.3-.9-.5-1.6-.5H6.3v3.7zM12.9 16.7l1.3-1.3c.6.6 1.3.9 2.1.9.5 0 .9-.1 1.1-.3.2-.2.4-.4.4-.7 0-.3-.1-.5-.4-.7-.2-.1-.7-.3-1.4-.5-1.1-.3-1.8-.7-2.2-1.1-.4-.4-.6-1-.6-1.7 0-.9.4-1.6 1.1-2.1.7-.5 1.7-.8 2.8-.8 1.1 0 2 .2 2.9.7l-1.1 1.3c-.6-.4-1.3-.6-1.9-.6-.4 0-.8.1-1 .3-.2.2-.3.4-.3.6 0 .2.1.4.4.6.2.1.6.3 1.3.5 1.1.3 1.9.7 2.3 1.1.4.4.6 1 .6 1.7 0 .9-.4 1.7-1.1 2.2-.7.5-1.7.8-2.9.8-1.4 0-2.5-.4-3.4-1.2z" fill="#31A8FF"/>
+
+                    <!-- Email -->
+                    <div class="flex items-center gap-3 pb-3 border-b border-[#E7E2D1]">
+                        <div
+                            class="w-8 h-8 rounded-lg bg-[#E2DEC8] flex items-center justify-center text-gray-800 shrink-0">
+
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
                             </svg>
+
                         </div>
-                        <span class="font-poppins font-semibold text-xs text-gray-900 mt-2 text-center">Photoshop</span>
+
+                        <span class="font-poppins text-xs font-semibold text-gray-800 truncate"
+                            title="jahiduhassanrifat0210@gmail.com">
+                            jahiduhassanrifat0210@gmail.com
+                        </span>
                     </div>
 
-                    <!-- Illustrator -->
-                    <div class="flex flex-col items-center">
-                        <div class="w-20 h-20 bg-white border border-[#D8C99F] rounded-2xl flex items-center justify-center p-3 shadow-sm hover:shadow-md hover:border-[#B7A261] transition-all">
-                            <svg class="w-11 h-11 rounded-lg" viewBox="0 0 24 24">
-                                <rect width="24" height="24" rx="4" fill="#330000"/>
-                                <path d="M5.5 16.5l2.8-9h1.9l2.8 9h-1.8l-.6-2.1H7.8l-.6 2.1H5.5zm2.8-3.6h2.1l-1.1-3.7-1 3.7zM14.2 8.7c0-.3.1-.6.3-.8.2-.2.5-.3.9-.3s.7.1.9.3c.2.2.3.5.3.8 0 .3-.1.6-.3.8-.2.2-.5.3-.9.3s-.7-.1-.9-.3c-.2-.2-.3-.5-.3-.8zm.2 7.8v-6.3h1.8v6.3h-1.8z" fill="#FF9A00"/>
+
+                    <!-- Address -->
+                    <div class="flex items-center gap-3 pb-3 border-b border-[#E7E2D1]">
+                        <div
+                            class="w-8 h-8 rounded-lg bg-[#E2DEC8] flex items-center justify-center text-gray-800 shrink-0">
+
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z">
+                                </path>
                             </svg>
+
                         </div>
-                        <span class="font-poppins font-semibold text-xs text-gray-900 mt-2 text-center">Illustrator</span>
+
+                        <span class="font-poppins text-xs font-semibold text-gray-800 leading-tight">
+                            824/2, Nurpur, Donia, Dhaka-1236
+                        </span>
+                    </div>
+
+
+                    <!-- Date of Birth -->
+                    <div class="flex items-center gap-3">
+
+                        <div
+                            class="w-8 h-8 rounded-lg bg-[#E2DEC8] flex items-center justify-center text-gray-800 shrink-0">
+
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+
+                            </svg>
+
+                        </div>
+
+                        <span class="font-poppins text-xs font-semibold text-gray-800">
+
+                            02, OCT. 2001
+
+                        </span>
+
                     </div>
 
                 </div>
-            </div>
 
-            <!-- RIGHT NAVIGATION BAR -->
+
+                <!-- Resume -->
+                <a href="#"
+                    class="block font-poppins w-full bg-[#D8C796] hover:bg-[#c9b47e] border border-[#BFA872] text-gray-900 font-bold py-3 rounded-xl shadow-sm transition-all text-center text-sm active:scale-95">
+                    View Resume
+                </a>
+
+            </aside>
+
+
+            <!-- MIDDLE CONTENT -->
+            <section class="flex-1 w-full bg-white border-2 border-[#B7A261] rounded-2xl p-6 sm:p-8 shadow-md">
+
+                <!-- Page Heading -->
+                <div class="border-b border-[#E7E2D1] pb-4 mb-8">
+                    <h2 class="font-poppins font-bold text-2xl sm:text-3xl text-gray-900 relative inline-block">
+
+                        Skills & Tools
+
+                        <span class="absolute bottom-0 left-0 w-full h-1 bg-[#D8C796] rounded-full -mb-4">
+                        </span>
+
+                    </h2>
+                </div>
+
+
+                <!-- Skills -->
+                <div class="mb-10">
+
+                    <h3 class="font-poppins font-bold text-xl text-gray-900 mb-6">
+                        Skills
+                    </h3>
+
+                    <div class="flex flex-wrap justify-center sm:justify-start gap-4 sm:gap-5">
+
+
+                        <!-- HTML5 -->
+                        <div class="flex flex-col items-center">
+                            <div
+                                class="w-16 h-16 sm:w-20 sm:h-20 bg-white border border-[#D8C99F] rounded-2xl flex items-center justify-center p-2.5 sm:p-3 shadow-sm hover:shadow-md hover:border-[#B7A261] transition-all">
+
+                                <svg class="w-10 h-10 sm:w-12 sm:h-12" viewBox="0 0 24 24" fill="none">
+                                    <path d="M1.5 0h21l-1.91 21.563L11.97 24 2.41 21.563L1.5 0z" fill="#E34F26" />
+                                    <path d="M12 22.1l7.65-2.12 1.55-17.48H12v19.6z" fill="#EF652A" />
+                                    <path
+                                        d="M12 9.42H8.38l-.25-2.82H12V3.88H5.32l.74 8.35H12V9.42zm0 6.96l-.04.01-3.52-.95-.23-2.52H5.43l.44 4.99 6.13 1.7v-3.23z"
+                                        fill="#FFF" />
+                                    <path
+                                        d="M12 3.88v2.72h3.87l-.36 4.02H12v2.81h3.25l-.31 3.44-2.94.8v3.23l6.13-1.7.83-9.32H12V3.88z"
+                                        fill="#EEE" />
+                                </svg>
+
+                            </div>
+
+                            <span class="font-poppins font-semibold text-xs text-gray-900 mt-2 text-center">
+                                HTML5
+                            </span>
+                        </div>
+
+
+                        <!-- CSS3 -->
+                        <div class="flex flex-col items-center">
+                            <div
+                                class="w-16 h-16 sm:w-20 sm:h-20 bg-white border border-[#D8C99F] rounded-2xl flex items-center justify-center p-2.5 sm:p-3 shadow-sm hover:shadow-md hover:border-[#B7A261] transition-all">
+
+                                <svg class="w-10 h-10 sm:w-12 sm:h-12" viewBox="0 0 24 24" fill="none">
+                                    <path d="M1.5 0h21l-1.91 21.563L11.97 24 2.41 21.563L1.5 0z" fill="#1572B6" />
+                                    <path d="M12 22.1l7.65-2.12 1.55-17.48H12v19.6z" fill="#33A9DC" />
+                                    <path
+                                        d="M12 9.42H8.38l-.25-2.82H12V3.88H5.32l.74 8.35H12V9.42zm0 6.96l-.04.01-3.52-.95-.23-2.52H5.43l.44 4.99 6.13 1.7v-3.23z"
+                                        fill="#FFF" />
+                                    <path
+                                        d="M12 3.88v2.72h6.84l-.25 2.82H12v2.81h3.8l-.36 4.02-3.44.93v3.23l6.13-1.7.83-9.32H12V3.88z"
+                                        fill="#EEE" />
+                                </svg>
+
+                            </div>
+
+                            <span class="font-poppins font-semibold text-xs text-gray-900 mt-2 text-center">
+                                CSS3
+                            </span>
+                        </div>
+
+
+                        <!-- JavaScript -->
+                        <div class="flex flex-col items-center">
+                            <div
+                                class="w-16 h-16 sm:w-20 sm:h-20 bg-white border border-[#D8C99F] rounded-2xl flex items-center justify-center p-2.5 sm:p-3 shadow-sm hover:shadow-md hover:border-[#B7A261] transition-all">
+
+                                <svg class="w-9 h-9 sm:w-11 sm:h-11 rounded-lg" viewBox="0 0 24 24">
+                                    <rect width="24" height="24" fill="#F7DF1E" />
+                                    <path
+                                        d="M6.48 18.23c.36.63.95 1.05 1.83 1.05.81 0 1.35-.42 1.35-1.02 0-.71-.53-1.02-1.44-1.42l-.51-.23c-1.46-.62-2.43-1.39-2.43-3.03 0-2.02 1.55-3.35 3.96-3.35 1.7 0 2.87.58 3.56 1.84l-1.57.99c-.37-.64-.86-.92-1.63-.92-.76 0-1.22.39-1.22.9 0 .61.42.88 1.32 1.28l.51.22c1.72.75 2.58 1.48 2.58 3.12 0 2.21-1.69 3.48-4.27 3.48-2.28 0-3.69-.97-4.29-2.22l1.7-.89zm9.23.23c.32.53.76.88 1.38.88.63 0 .98-.28.98-.68 0-.47-.32-.69-1.08-.98l-.42-.16c-1.32-.49-2.18-1.21-2.18-2.73 0-1.84 1.43-3.17 3.65-3.17 1.58 0 2.59.56 3.19 1.66l-1.45.92c-.31-.5-.69-.74-1.35-.74-.61 0-.96.28-.96.65 0 .42.27.63.96.89l.42.16c1.47.56 2.31 1.22 2.31 2.8 0 2.02-1.54 3.32-4.05 3.32-2.23 0-3.58-.93-4.14-2.15l1.74-.88z"
+                                        fill="#000" />
+                                </svg>
+
+                            </div>
+
+                            <span class="font-poppins font-semibold text-xs text-gray-900 mt-2 text-center">
+                                JavaScript
+                            </span>
+                        </div>
+
+
+                        <!-- React.js -->
+                        <div class="flex flex-col items-center">
+                            <div
+                                class="w-16 h-16 sm:w-20 sm:h-20 bg-white border border-[#D8C99F] rounded-2xl flex items-center justify-center p-2.5 sm:p-3 shadow-sm hover:shadow-md hover:border-[#B7A261] transition-all">
+
+                                <svg class="w-10 h-10 sm:w-12 sm:h-12" viewBox="0 0 100 100" fill="none">
+                                    <circle cx="50" cy="50" r="10" fill="#61DAFB" />
+                                    <ellipse cx="50" cy="50" rx="42" ry="16" stroke="#61DAFB" stroke-width="4" />
+                                    <ellipse cx="50" cy="50" rx="42" ry="16" stroke="#61DAFB" stroke-width="4"
+                                        transform="rotate(60 50 50)" />
+                                    <ellipse cx="50" cy="50" rx="42" ry="16" stroke="#61DAFB" stroke-width="4"
+                                        transform="rotate(120 50 50)" />
+                                </svg>
+
+                            </div>
+
+                            <span class="font-poppins font-semibold text-xs text-gray-900 mt-2 text-center">
+                                React.js
+                            </span>
+                        </div>
+
+
+                        <!-- Next.js -->
+                        <div class="flex flex-col items-center">
+                            <div
+                                class="w-16 h-16 sm:w-20 sm:h-20 bg-white border border-[#D8C99F] rounded-2xl flex items-center justify-center p-2.5 sm:p-3 shadow-sm hover:shadow-md hover:border-[#B7A261] transition-all">
+
+                                <svg class="w-9 h-9 sm:w-11 sm:h-11" viewBox="0 0 180 180" fill="none">
+                                    <circle cx="90" cy="90" r="90" fill="#000" />
+                                    <path
+                                        d="M149.508 157.52L69.142 54H54V126H66.9706V70.3519L137.326 160.985C141.597 160.038 145.672 158.874 149.508 157.52Z"
+                                        fill="white" />
+                                    <rect x="115" y="54" width="13" height="72" fill="white" />
+                                </svg>
+
+                            </div>
+
+                            <span class="font-poppins font-semibold text-xs text-gray-900 mt-2 text-center">
+                                Next.js
+                            </span>
+                        </div>
+
+
+                        <!-- TypeScript -->
+                        <div class="flex flex-col items-center">
+                            <div
+                                class="w-16 h-16 sm:w-20 sm:h-20 bg-white border border-[#D8C99F] rounded-2xl flex items-center justify-center p-2.5 sm:p-3 shadow-sm hover:shadow-md hover:border-[#B7A261] transition-all">
+
+                                <svg class="w-9 h-9 sm:w-11 sm:h-11 rounded-lg" viewBox="0 0 24 24" fill="none">
+
+                                    <rect width="24" height="24" rx="4" fill="#3178C6" />
+
+                                    <path
+                                        d="M11.97 10.11H9.12v9.33H7.07v-9.33H4.22V8.34h7.75v1.77zm1.88 7.37c.52.33 1.25.56 2.05.56 1.13 0 1.76-.48 1.76-1.18 0-.69-.53-1.07-1.85-1.54-1.74-.61-2.61-1.37-2.61-2.73 0-1.8 1.48-2.94 3.73-2.94 1.11 0 1.93.24 2.51.57l-.59 1.55c-.44-.26-1.08-.47-1.85-.47-1.09 0-1.63.5-1.63 1.1 0 .66.56.97 1.9 1.48 1.77.65 2.58 1.45 2.58 2.82 0 1.97-1.53 3.09-3.95 3.09-1.22 0-2.22-.3-2.82-.69l.37-1.62z"
+                                        fill="white" />
+
+                                </svg>
+
+                            </div>
+
+                            <span class="font-poppins font-semibold text-xs text-gray-900 mt-2 text-center">
+                                TypeScript
+                            </span>
+                        </div>
+
+
+                        <!-- Node.js -->
+                        <div class="flex flex-col items-center">
+                            <div
+                                class="w-16 h-16 sm:w-20 sm:h-20 bg-white border border-[#D8C99F] rounded-2xl flex items-center justify-center p-2.5 sm:p-3 shadow-sm hover:shadow-md hover:border-[#B7A261] transition-all">
+
+                                <svg class="w-9 h-9 sm:w-11 sm:h-11" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 1.5l10.39 6v12L12 25.5l-10.39-6v-12L12 1.5z" fill="#5FA04E" />
+                                    <path d="M12 2.7l9.35 5.4v10.8L12 24.3l-9.35-5.4V8.1L12 2.7z" fill="#336633" />
+                                    <path
+                                        d="M11.7 8.5c-.3 0-.6.1-.8.3l-3.3 1.9c-.3.2-.5.5-.5.8v3.8c0 .3.2.6.5.8l3.3 1.9c.3.2.6.3.8.3s.6-.1.8-.3l3.3-1.9c.3-.2.5-.5.5-.8v-3.8c0-.3-.2-.6-.5-.8l-3.3-1.9c-.2-.2-.5-.3-.8-.3z"
+                                        fill="#FFF" />
+                                </svg>
+
+                            </div>
+
+                            <span class="font-poppins font-semibold text-xs text-gray-900 mt-2 text-center">
+                                Node.js
+                            </span>
+                        </div>
+
+
+                        <!-- Express.js -->
+                        <div class="flex flex-col items-center">
+                            <div
+                                class="w-16 h-16 sm:w-20 sm:h-20 bg-white border border-[#D8C99F] rounded-2xl flex items-center justify-center p-2.5 sm:p-3 shadow-sm hover:shadow-md hover:border-[#B7A261] transition-all">
+
+                                <svg class="w-9 h-9 sm:w-11 sm:h-11" viewBox="0 0 24 24" fill="none">
+
+                                    <path d="M24 12c0 6.627-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0s12 5.373 12 12z"
+                                        fill="#000" />
+
+                                    <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" fill="#FFF"
+                                        font-family="sans-serif" font-weight="bold" font-size="9">
+                                        ex
+                                    </text>
+
+                                </svg>
+
+                            </div>
+
+                            <span class="font-poppins font-semibold text-xs text-gray-900 mt-2 text-center">
+                                Express.js
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Tools & Software -->
+                <div>
+
+                    <h3 class="font-poppins font-bold text-xl text-gray-900 mb-6">
+                        Tools & Software
+                    </h3>
+
+                    <div class="flex flex-wrap justify-center sm:justify-start gap-4 sm:gap-5">
+
+
+                        <!-- GitHub -->
+                        <div class="flex flex-col items-center">
+                            <div
+                                class="w-16 h-16 sm:w-20 sm:h-20 bg-white border border-[#D8C99F] rounded-2xl flex items-center justify-center p-2.5 sm:p-3 shadow-sm hover:shadow-md hover:border-[#B7A261] transition-all">
+
+                                <svg class="w-9 h-9 sm:w-11 sm:h-11 text-gray-800 fill-current" viewBox="0 0 24 24">
+
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
+                                    </path>
+
+                                </svg>
+
+                            </div>
+
+                            <span class="font-poppins font-semibold text-xs text-gray-900 mt-2 text-center">
+                                GitHub
+                            </span>
+                        </div>
+
+
+                        <!-- Photoshop -->
+                        <div class="flex flex-col items-center">
+                            <div
+                                class="w-16 h-16 sm:w-20 sm:h-20 bg-white border border-[#D8C99F] rounded-2xl flex items-center justify-center p-2.5 sm:p-3 shadow-sm hover:shadow-md hover:border-[#B7A261] transition-all">
+
+                                <svg class="w-9 h-9 sm:w-11 sm:h-11 rounded-lg" viewBox="0 0 24 24">
+
+                                    <rect width="24" height="24" rx="4" fill="#001E36" />
+
+                                    <path
+                                        d="M4.5 16.5V7.5H8c1.3 0 2.2.3 2.8.9.6.6.9 1.4.9 2.4 0 1.1-.3 1.9-1 2.5-.6.6-1.6.9-2.8.9H6.3v2.3H4.5zm1.8-4.1h1.5c.7 0 1.2-.2 1.6-.5.3-.3.5-.8.5-1.4 0-.6-.2-1-.5-1.3-.4-.3-.9-.5-1.6-.5H6.3v3.7zM12.9 16.7l1.3-1.3c.6.6 1.3.9 2.1.9.5 0 .9-.1 1.1-.3.2-.2.4-.4.4-.7 0-.3-.1-.5-.4-.7-.2-.1-.7-.3-1.4-.5-1.1-.3-1.8-.7-2.2-1.1-.4-.4-.6-1-.6-1.7 0-.9.4-1.6 1.1-2.1.7-.5 1.7-.8 2.8-.8 1.1 0 2 .2 2.9.7l-1.1 1.3c-.6-.4-1.3-.6-1.9-.6-.4 0-.8.1-1 .3-.2.2-.3.4-.3.6 0 .2.1.4.4.6.2.1.6.3 1.3.5 1.1.3 1.9.7 2.3 1.1.4.4.6 1 .6 1.7 0 .9-.4 1.7-1.1 2.2-.7.5-1.7.8-2.9.8-1.4 0-2.5-.4-3.4-1.2z"
+                                        fill="#31A8FF" />
+
+                                </svg>
+
+                            </div>
+
+                            <span class="font-poppins font-semibold text-xs text-gray-900 mt-2 text-center">
+                                Photoshop
+                            </span>
+                        </div>
+
+
+                        <!-- Illustrator -->
+                        <div class="flex flex-col items-center">
+                            <div
+                                class="w-16 h-16 sm:w-20 sm:h-20 bg-white border border-[#D8C99F] rounded-2xl flex items-center justify-center p-2.5 sm:p-3 shadow-sm hover:shadow-md hover:border-[#B7A261] transition-all">
+
+                                <svg class="w-9 h-9 sm:w-11 sm:h-11 rounded-lg" viewBox="0 0 24 24">
+
+                                    <rect width="24" height="24" rx="4" fill="#330000" />
+
+                                    <path
+                                        d="M5.5 16.5l2.8-9h1.9l2.8 9h-1.8l-.6-2.1H7.8l-.6 2.1H5.5zm2.8-3.6h2.1l-1.1-3.7-1 3.7zM14.2 8.7c0-.3.1-.6.3-.8.2-.2.5-.3.9-.3s.7.1.9.3c.2.2.3.5.3.8 0 .3-.1.6-.3.8-.2.2-.5.3-.9.3s-.7-.1-.9-.3c-.2-.2-.3-.5-.3-.8zm.2 7.8v-6.3h1.8v6.3h-1.8z"
+                                        fill="#FF9A00" />
+
+                                </svg>
+
+                            </div>
+
+                            <span class="font-poppins font-semibold text-xs text-gray-900 mt-2 text-center">
+                                Illustrator
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- RIGHT NAVIGATION -->
             <nav
-                class="w-[92px] bg-white border-2 border-[#C6B683] rounded-[28px] p-3 flex flex-col items-center gap-3 shadow-sm font-sans shrink-0">
+                class="w-full lg:w-24 bg-white/95 backdrop-blur-md border-2 border-[#C6B683] rounded-2xl lg:rounded-[28px] p-2 sm:p-3 flex flex-row lg:flex-col items-center justify-around lg:justify-start gap-2 sm:gap-3 shadow-lg fixed bottom-3 left-1/2 -translate-x-1/2 lg:translate-x-0 lg:static lg:top-24 z-40 shrink-0 max-w-[95%] sm:max-w-md lg:max-w-none">
 
                 <!-- About -->
                 <a href="index.html"
-                    class="w-full aspect-square bg-[#FAF4E1] hover:bg-[#f1e8ce] text-gray-900 rounded-2xl flex flex-col items-center justify-center gap-1 transition-colors cursor-pointer">
-                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                    class="w-14 h-14 sm:w-16 sm:h-16 lg:w-full lg:aspect-square bg-[#FAF4E1] hover:bg-[#f1e8ce] text-gray-800 rounded-2xl flex flex-col items-center justify-center gap-1 transition-all">
+
+                    <svg class="w-5 h-5 sm:w-6 sm:h-6 fill-current" viewBox="0 0 24 24">
                         <path
-                            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z">
+                        </path>
                     </svg>
-                    <span class="font-poppins text-[11px] font-bold">About</span>
+
+                    <span class="font-poppins text-[10px] sm:text-[11px] font-bold">
+                        About
+                    </span>
                 </a>
+
 
                 <!-- Experience -->
                 <a href="experience.html"
-                    class="w-full aspect-square bg-[#FAF4E1] hover:bg-[#f1e8ce] text-gray-900 rounded-2xl flex flex-col items-center justify-center gap-1 transition-colors cursor-pointer">
-                    <svg class="w-6 h-6 fill-none stroke-current" stroke-width="2" viewBox="0 0 24 24"
+                    class="w-14 h-14 sm:w-16 sm:h-16 lg:w-full lg:aspect-square bg-[#FAF4E1] hover:bg-[#f1e8ce] text-gray-800 rounded-2xl flex flex-col items-center justify-center gap-1 transition-all">
+
+                    <svg class="w-5 h-5 sm:w-6 sm:h-6 fill-none stroke-current" stroke-width="2" viewBox="0 0 24 24"
                         stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="3" y="6" width="18" height="12" rx="2" />
-                        <line x1="7" y1="10" x2="17" y2="10" />
-                        <line x1="7" y1="14" x2="17" y2="14" />
+
+                        <rect x="3" y="6" width="18" height="12" rx="2"></rect>
+                        <line x1="7" y1="10" x2="17" y2="10"></line>
+                        <line x1="7" y1="14" x2="17" y2="14"></line>
+
                     </svg>
-                    <span class="font-poppins text-[10px] font-bold">Experience</span>
+
+                    <span class="font-poppins text-[9px] sm:text-[10px] font-bold">
+                        Experience
+                    </span>
                 </a>
+
 
                 <!-- Projects -->
                 <a href="projects.html"
-                    class="w-full aspect-square bg-[#FAF4E1] hover:bg-[#f1e8ce] text-gray-900 rounded-2xl flex flex-col items-center justify-center gap-1 transition-colors cursor-pointer">
-                    <svg class="w-6 h-6 fill-none stroke-current" stroke-width="2" viewBox="0 0 24 24"
+                    class="w-14 h-14 sm:w-16 sm:h-16 lg:w-full lg:aspect-square bg-[#FAF4E1] hover:bg-[#f1e8ce] text-gray-800 rounded-2xl flex flex-col items-center justify-center gap-1 transition-all">
+
+                    <svg class="w-5 h-5 sm:w-6 sm:h-6 fill-none stroke-current" stroke-width="2" viewBox="0 0 24 24"
                         stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="3" y="5" width="18" height="10" rx="2" />
-                        <path d="M2 18h20" />
-                        <path d="M9 9l-2 2 2 2" />
-                        <path d="M15 9l2 2-2 2" />
+
+                        <rect x="3" y="5" width="18" height="10" rx="2"></rect>
+                        <path d="M2 18h20"></path>
+                        <path d="M9 9l-2 2 2 2"></path>
+                        <path d="M15 9l2 2-2 2"></path>
+
                     </svg>
-                    <span class="font-poppins text-[11px] font-bold">Projects</span>
+
+                    <span class="font-poppins text-[10px] sm:text-[11px] font-bold">
+                        Projects
+                    </span>
                 </a>
 
-                <!-- Skills (Active - Gold Highlight) -->
+
+                <!-- Skills - ACTIVE -->
                 <a href="skills.html"
-                    class="w-full aspect-square bg-[#B39B5C] text-white rounded-2xl flex flex-col items-center justify-center gap-1 transition-colors cursor-pointer shadow-sm">
-                    <svg class="w-6 h-6 fill-none stroke-current" stroke-width="2" viewBox="0 0 24 24"
+                    class="w-14 h-14 sm:w-16 sm:h-16 lg:w-full lg:aspect-square bg-[#B39B5C] text-white rounded-2xl flex flex-col items-center justify-center gap-1 transition-all shadow-sm">
+
+                    <svg class="w-5 h-5 sm:w-6 sm:h-6 fill-none stroke-current" stroke-width="2" viewBox="0 0 24 24"
                         stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                        <circle cx="12" cy="11" r="2" />
-                        <path d="M13.5 12.5L15 14" />
+
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        <circle cx="12" cy="11" r="2"></circle>
+                        <path d="M13.5 12.5L15 14"></path>
+
                     </svg>
-                    <span class="font-poppins text-[11px] font-bold">Skills</span>
+
+                    <span class="font-poppins text-[10px] sm:text-[11px] font-bold">
+                        Skills
+                    </span>
                 </a>
+
 
                 <!-- Contact -->
                 <a href="contact.html"
-                    class="w-full aspect-square bg-[#FAF4E1] hover:bg-[#f1e8ce] text-gray-900 rounded-2xl flex flex-col items-center justify-center gap-1 transition-colors cursor-pointer">
-                    <svg class="w-6 h-6 fill-none stroke-current" stroke-width="2" viewBox="0 0 24 24"
+                    class="w-14 h-14 sm:w-16 sm:h-16 lg:w-full lg:aspect-square bg-[#FAF4E1] hover:bg-[#f1e8ce] text-gray-800 rounded-2xl flex flex-col items-center justify-center gap-1 transition-all">
+
+                    <svg class="w-5 h-5 sm:w-6 sm:h-6 fill-none stroke-current" stroke-width="2" viewBox="0 0 24 24"
                         stroke-linecap="round" stroke-linejoin="round">
+
                         <path
-                            d="M16 2H8C6.89543 2 6 2.89543 6 4V20C6 21.1046 6.89543 22 8 22H16C17.1046 22 18 21.1046 18 20V4C18 2.89543 17.1046 2 16 2Z" />
-                        <path d="M3 6H6" />
-                        <path d="M3 12H6" />
-                        <path d="M3 18H6" />
-                        <circle cx="12" cy="9" r="2" />
-                        <path d="M9 16C9 14.3431 10.3431 13 12 13C13.6569 13 15 14.3431 15 16" />
+                            d="M16 2H8C6.89543 2 6 2.89543 6 4V20C6 21.1046 6.89543 22 8 22H16C17.1046 22 18 21.1046 18 20V4C18 2.89543 17.1046 2 16 2Z">
+                        </path>
+
+                        <path d="M3 6H6"></path>
+                        <path d="M3 12H6"></path>
+                        <path d="M3 18H6"></path>
+
+                        <circle cx="12" cy="9" r="2"></circle>
+
+                        <path d="M9 16C9 14.3431 10.3431 13 12 13C13.6569 13 15 14.3431 15 16">
+                        </path>
+
                     </svg>
-                    <span class="font-poppins text-[11px] font-bold">Contact</span>
+
+                    <span class="font-poppins text-[10px] sm:text-[11px] font-bold">
+                        Contact
+                    </span>
                 </a>
 
             </nav>
+
         </div>
-    </section>
-    <!-- ===== Skills part end ===== -->
+
+    </main>
+
 </body>
 
 </html>
